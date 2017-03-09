@@ -1,6 +1,14 @@
+// Declared the main module (app).
 angular
 	.module('toDoList',[
+		// Defined the modules dependencies and any "global" dependencies
+        // Modules that this module depends on will inherit this modules dependencies
+
+
+		// Global Dependencies
 		'ui.router',
+
+		// Features
 		'toDoList.list',
 		'toDoList.create',
 		'toDoList.completed'

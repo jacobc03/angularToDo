@@ -5,7 +5,7 @@ angular
 function listConfig($stateProvider) {
 	$stateProvider.state({
 		name: 'list',
-		url:'/',
+		url:'/list',
 		templateUrl:'/toDoList/features/list/list.html',
 		//Where controller name is defined. All controllers start with a capital letter
 		controller:'ListCtrl',

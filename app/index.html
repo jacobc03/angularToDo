@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<title>Angular To Do List</title>
+	 <!-- For Materialize -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 	<!-- Angular and UI-Router libraries -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
@@ -9,7 +12,17 @@
     <link rel="stylesheet" type="text/css" href="toDoList/layout/assets/styles/layout.css">
 </head>
 <!-- tells the app to run this module first -->
-<body ng-app="toDoList">
+<body ng-app="toDoList">	
+	<nav>
+	    <div class="nav-wrapper">
+	      <a ui-sref="list" class="brand-logo center">AngularJS To-Do</a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a ui-sref="list">List</a></li>
+	        <li><a ui-sref="create">Create</a></li>
+	        <li><a ui-sref="completed">Completed</a></li>
+	      </ul>
+	    </div>
+ 	</nav>
 
 	<ui-view></ui-view>
 

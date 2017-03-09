@@ -1,1 +1,19 @@
-Create html
+<h1>Create To Do Item</h1>
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+        	<textarea id="textarea1" name="newItem" class="materialize-textarea" ng-model='CreateVM.newData.toDoItem'></textarea>
+
+        	<input type="date" name="date" class="datepicker" ng-model='CreateVM.newData.toDoDate'>
+		
+			<button class="btn waves-effect waves-light" type="submit"
+			ng-click='CreateVM.addToDo()'>Submit
+			</button>
+        
+        </div>
+      </div>
+    </form>
+  </div>
+        
