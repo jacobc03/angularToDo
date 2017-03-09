@@ -14,10 +14,17 @@ module.exports = function(app){
 	    })
 	})
 
-	// app.get('/api/:id',function(req,res){
-	// 	ToDoList.findOne({
-	// 		"_id": req.params.id
-	//  })
-	// 	.populate()
-	// })
+	app.get("/list", function(req, res) {
+    // Finds every doc in the Articles array
+    ToDoList.find({}, function(error, doc) {
+        //Console any errors
+        if (error) {
+            console.log(error);
+        }
+        // Sends the data to the browser as a josn if there is no errors
+        else {
+            res.json(doc);
+        }
+    });
+});
 }

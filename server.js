@@ -7,7 +7,8 @@ var express = require('express');
 // Set mongoose to leverage built in JavaScript ES6 Promises
 mongoose.Promise = Promise;
 
-mongoose.connect("mongodb://localhost/ToDoList");
+mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds127260.mlab.com:27260/heroku_3ksk08b2");
+//mongoose.connect("mongodb://localhost/ToDoList");
 var db = mongoose.connection;
 
 // Show any mongoose errors
